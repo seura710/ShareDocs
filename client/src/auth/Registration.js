@@ -25,7 +25,7 @@ export default class Registration extends Component {
     handleSubmit(event) {
         const { email, password, password_confirmation } = this.state
 
-        axios.post("http://localhost:8001/registrations", {
+        axios.post("https://rocky-headland-80907.herokuapp.com/registrations", {
             user: {
                 email: email, 
                 password: password,
