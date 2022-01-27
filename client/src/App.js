@@ -21,7 +21,7 @@ export default class App extends Component {
   }
   
   checkLoginStatus() {
-    axios.get("http://localhost:8001/logged_in", { withCredentials: true }).then(response => {
+    axios.get("https://rocky-headland-80907.herokuapp.com/logged_in", { withCredentials: true }).then(response => {
       if (response.data.logged_in && this.state.loggedInStatus === "Please Login!"){
       this.setState({
         loggedInStatus: <VerifiedUserOutlinedIcon/>,

@@ -19,7 +19,7 @@ export default class Home extends Component {
     }
 
     handleLogoutClick(){
-        axios.delete("http://localhost:8001/logout", { withCredentials: true }).then(response => {
+        axios.delete("https://rocky-headland-80907.herokuapp.com/logout", { withCredentials: true }).then(response => {
             this.props.handleLogout();
         }).catch(error => {
             console.log("logout error", error);
