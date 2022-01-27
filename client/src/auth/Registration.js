@@ -32,10 +32,6 @@ export default class Registration extends Component {
                 password_confirmation: password_confirmation
             }
         },
-        { headers: {
-            'content-type': 'text/json',
-            'Access-Control-Allow-Origin': '*'
-        }},
         { withCredentials: true }
         ).then(response => {
             if(response.data.status === 'created'){

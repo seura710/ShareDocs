@@ -30,10 +30,6 @@ export default class Login extends Component {
                 password: password,
             }
         },
-        { headers: {
-            'content-type': 'text/json',
-            'Access-Control-Allow-Origin': '*'
-        }},
         { withCredentials: true }
         ).then(response => {
             if(response.data.logged_in){
