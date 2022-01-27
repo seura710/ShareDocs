@@ -1,14 +1,8 @@
 class SessionsController < ApplicationController
     include CurrentUserConcern
-    before_filter :cors_set_access_control
+    before_filter :cors_preflight_check
+  after_filter :cors_set_access_control_headers
 
-    def cors_set_access_control
-        headers['Access-Control-Allow-Origin'] = '*'
-        headers['Access-Control-Allow-Methods'] = 'POST, PUT, DELETE, GET, OPTIONS'
-        headers['Access-Control-Request-Method'] = '*'
-        headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
-    end
-    
     def create
         user = User.find_by(email: params["user"]["email"]).try(:authenticate, params["user"]["password"])
         if user 
