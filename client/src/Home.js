@@ -31,7 +31,10 @@ export default class Home extends Component {
                 <div className="App">
                     <div className="form-home">
                     <h1>ShareDocs <SummarizeIcon/></h1>
-                    {this.props.loggedInStatus} <button onClick={() => this.handleLogoutClick()}><LogoutIcon/></button>
+                    <div className="box">
+                    {this.props.loggedInStatus} 
+                    <button onClick={() => this.handleLogoutClick()}><LogoutIcon/></button>
+                    </div>
                     <Registration handleSuccessfulAuth={this.handleSuccessfulAuth}/>
                     <Login handleSuccessfulAuth={this.handleSuccessfulAuth}/>
                     </div>

@@ -53,7 +53,6 @@ export default class Registration extends Component {
 
                 <input type="password" name="password_confirmation" placeholder="Password confirmation" value={this.state.password_confirmation} 
                 autoComplete="new-password" onChange={this.handleChange} required/>
-                
                 <button type="submit"><AppRegistrationIcon/></button>
                 </div>
                 </form>
