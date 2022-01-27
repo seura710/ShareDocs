@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@material-ui/icons": "^4.11.2",
+    "devcamp-js-builder": "^1.6.3",
+    "react-router-dom": "^5.3.0"
+  }
+}
