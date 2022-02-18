@@ -41,7 +41,9 @@ npm run devStart
 
 #### Start MongoDB
 
+```
 ./mongod --dbpath ./data/db
+```
 
 #### Start react front-end application
 
