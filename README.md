@@ -34,6 +34,8 @@ rails s -p 8001
 - This will start the rails server using port 8001
 
 #### Start socket.io server
+
+Under **server** directory :
 ```
 npm run devStart
 ```
