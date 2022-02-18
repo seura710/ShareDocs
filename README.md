@@ -12,7 +12,7 @@ ShareDocs is React application for front-end with Ruby on Rails as back-end serv
 ### Dependencies
 
 Used libraries :
-- Rails 6.0.0
+- Rails 6.1.4.4
 - Quill.js
 - Socket.io library
 - MongoDB
