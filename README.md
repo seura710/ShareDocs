@@ -57,8 +57,6 @@ npm start
 
 ## Authors
 
-Contributors names and contact info
-
 Harris Kim  - [LinkedIn](https://www.linkedin.com/in/harris-kim/)
 
 ## Version History
